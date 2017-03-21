@@ -1,0 +1,66 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.1.46-community
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema employee
+--
+
+CREATE DATABASE IF NOT EXISTS employee;
+USE employee;
+
+--
+-- Definition of table `employee`
+--
+
+DROP TABLE IF EXISTS `employee`;
+CREATE TABLE `employee` (
+  `empid` int(11) DEFAULT NULL,
+  `name` varchar(40) DEFAULT NULL,
+  `gender` varchar(8) DEFAULT NULL,
+  `address` varchar(30) DEFAULT NULL,
+  `city` varchar(25) DEFAULT NULL,
+  `mobile` varchar(10) DEFAULT NULL,
+  `email` varchar(40) DEFAULT NULL,
+  `facebookid` varchar(30) DEFAULT NULL,
+  `website` varchar(30) DEFAULT NULL,
+  `blog` varchar(43) DEFAULT NULL,
+  `username` varchar(30) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `employee`
+--
+
+/*!40000 ALTER TABLE `employee` DISABLE KEYS */;
+INSERT INTO `employee` (`empid`,`name`,`gender`,`address`,`city`,`mobile`,`email`,`facebookid`,`website`,`blog`,`username`,`password`) VALUES 
+ (101,'AMIT','M','12E-98,Sector-32','AGRA','9438435438','ram231@gmail.com','ramyoga537@facebook.com','ramyoga.com','blogspot.com/ram','amit123','amit@305'),
+ (102,'ROHIT','M','6E-98,Sector-34','MUMBAI','8973452344','rohit323@gmail.com','rohit.verma213@facebook.com','rohitverma.com','blogspot.com/rohit','rohit123','rohit@123'),
+ (103,'CHIRAG','M','3E-094,Block-H','KERLA','7665323873','chiraggarg322@gmail.com','chirag.garg3214@facebook.com','chiraggarg32.com','blogspot.com/chirag','chirag1234','chirag@123'),
+ (104,'PRIYA','F','13-E,Sector-14','PUNE','8293237432','sharma.priya231@gmail.com','priya.433@facebook.com','priyasharmademo.com','blogspot.com/@priya','priya123','priya@123'),
+ (101,'raj','Male','Sec-19','noida','1234567890','raj@gmail.com','rj.opo','www.raj.com','hello','raj','raj');
+/*!40000 ALTER TABLE `employee` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
